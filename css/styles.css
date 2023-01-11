@@ -3,6 +3,8 @@ html, body{
     margin: 0;
     height: 100%;
     width: 100%;
+    font-size: 25px;
+    color: #b9b9b9;
 }
 
 .imageContainer{
@@ -29,6 +31,55 @@ html, body{
     background-color: black;
 }
 
-.middleDiv{
-    text-align: center;
+.topDiv{
+    height: 35%;
+    width: auto;
+    background-color: aqua;
 }
+
+.topDivPara{
+    margin-left: 40px;
+    margin-top: 0;
+    width: 28rem;
+}
+
+.firstPara{
+    margin-bottom: 0;
+}
+
+
+.middleDiv{
+    height: 30%;
+    width: auto;
+    background-color: red;
+}
+
+.middleDivParagraph{
+    text-align: left;
+    padding-top: 15px;
+    margin: 0 0 15px 40px;
+}
+
+.formCenter{
+    display: flex;
+}
+
+input[type="text"]{
+    margin: 0 30px 15px 40px;
+    font-size: 15px;
+    display: block;
+}
+
+label{
+    font-size: 15px;
+    text-align: left;
+    margin: 0 0 0 40px;
+    display: block;
+}
+
+.bottomDiv{
+    height: 35%;
+    width: auto;
+    background-color: yellow;
+}
+
