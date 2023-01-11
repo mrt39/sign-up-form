@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Orbitron:wght@400;600;700&display=swap');
+
 html, body{
     display: flex;
     margin: 0;
     height: 100%;
     width: 100%;
-    font-size: 25px;
+    font-size: 23px;
     color: #b9b9b9;
+    font-family: 'Fira Mono', monospace;
 }
 
 .imageContainer{
@@ -19,39 +22,75 @@ html, body{
     height: 100%;
 }
 
+.logoDiv{
+    height: 20%;
+    width: auto;
+    background-color: rgba(0, 0, 0, .6);
+    position:relative;
+    bottom: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoimage{
+    height: 75%;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.logoPara{
+    color: rgba(255,255,255, 1);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+}
+
 .creditText{
+    opacity: 0.80;
     color:white;
-    position: absolute;
-    top: 25px;
+    position: relative;
+    bottom: 11rem;
+    font-size: 12px;
+    text-align: center;
+
+}
+
+.creditTextAnchor2{
+    color:white;
 }
 
 .contentContainer{
     width: 100%;
     height: auto;
-    background-color: black;
+    background-color: #0c0f0d;
 }
 
 .topDiv{
     height: 35%;
     width: auto;
-    background-color: aqua;
+    background-image: linear-gradient(black, #121711);
+    
 }
 
 .topDivPara{
     margin-left: 40px;
     margin-top: 0;
-    width: 28rem;
+    width: 38rem;
 }
 
 .firstPara{
-    margin-bottom: 0;
+    margin-bottom: 0px;
+}
+
+.secondPara{
+    margin-bottom: 25px;
 }
 
 
 .middleDiv{
     height: 30%;
     width: auto;
-    background-color: red;
+    background-color: #121711;
+    
 }
 
 .middleDivParagraph{
@@ -64,11 +103,20 @@ html, body{
     display: flex;
 }
 
-input[type="text"]{
+input{
     margin: 0 30px 15px 40px;
     font-size: 15px;
     display: block;
+    font-family: 'Fira Mono', monospace;
 }
+
+input:focus{
+    outline: none !important;
+    border: 2px solid #00f096;
+    box-shadow: 0 0 10px #00f096;
+}
+
+
 
 label{
     font-size: 15px;
@@ -77,9 +125,40 @@ label{
     display: block;
 }
 
+.btn{
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 20px;
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+    color: #00f096;
+    border: solid #00f096 2px;
+    border-radius: 5px;
+    background-color: #121711;
+    font-weight: 600;
+    font-family: 'Fira Mono', monospace;
+}
+
+.btn:hover {
+    background: #00f096;
+    color: #121711;
+    text-decoration: none;
+  }
+
 .bottomDiv{
     height: 35%;
     width: auto;
-    background-color: yellow;
+    background-image: linear-gradient(#121711, black);
 }
 
+.bottomDivPara{
+    font-size: 18px;
+    margin-left: 40px;
+    margin-top: 0;
+}
+
+.bottomDivAnchor{
+    text-decoration: none;
+    color: #00f096;
+    font-weight: 600;
+}

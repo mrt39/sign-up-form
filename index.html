@@ -11,8 +11,13 @@
 
 
     <div class="imageContainer">
-        <img class = "imageLeft" src="images/image.jpg" alt="study-img">
-        <p class="creditText">Photo by <a href="https://unsplash.com/de/@kvncnls?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kevin Canlas</a> on <a href="https://unsplash.com/photos/wycXe2BrKz8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+     <!--  <img class = "imageLeft" src="images/image.jpg" alt="study-img">   --> 
+        <img class = "imageLeft" src="images/image3.jpg" alt="study-img">
+        <div class="logoDiv">
+            <img class = "logoimage" src="images/logo.png" alt="logo-img">
+            <p class="logoPara">CodingHub</p>
+        </div>
+        <p class="creditText">Photo by <a class = "creditTextAnchor2" href="https://unsplash.com/de/@kvncnls?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kevin Canlas</a> on <a class = "creditTextAnchor2" href="https://unsplash.com/photos/ia7-T2bjDb4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
     </div>
 
     <div class="contentContainer">
@@ -25,30 +30,45 @@
         <div class="middleDiv">
     
             <p class="middleDivParagraph">Let's do this!</p>
-            <form class = "formCenter" action="" method="post">
+            <form class = "formCenter" action="#">
                 
                 <div class="firstColumn">
-                    <label>FIRST NAME</label>
-                    <input type="text" name="" id="" size="50"> <br>
-                    <label>E-MAIL</label>
-                    <input type="text" name="" id="" size="50"> <br>
-                    <label>PASSWORD</label>
-                    <input type="text" name="" id="" size="50"> <br>
+                    <div class="input">
+                        <label>FIRST NAME</label>
+                        <input type="text" name="" id="" size="40" required> <br>
+                    </div>
+                    <div class="input">
+                        <label>E-MAIL</label>
+                        <input type="email" name="" id="" size="40" required> <br>
+                    </div>
+                    <div class="input">
+                        <label>PASSWORD</label>
+                        <input type="password" name="" id="" size="40" required> <br>
+                    </div>
+                        <input class = "btn" type="submit" value="Create Account">
                 </div>
                 <div class="secondColumn">
-                    <label>LAST NAME</label>
-                    <input type="text" name="" id="" size="50"> <br>
-                    <label>PHONE NUMBER</label>
-                    <input type="text" name="" id="" size="50"> <br>
-                    <label>CONFIRM PASSWORD</label>
-                    <input type="text" name="" id="" size="50"> <br>
+                    <div class="input">
+                        <label>LAST NAME</label>
+                        <input type="text" name="" id="" size="40" required> <br>
+                    </div>
+                    <div class="input">
+                        <label>PHONE NUMBER</label>
+                        <input type="tel" name="" id="" size="40" required> <br>
+                    </div>
+                    <div class="input">
+                        <label>CONFIRM PASSWORD</label>
+                        <input type="password" name="" id="" size="40" required> <br>
+                    </div>
                 </div>
+                
             
             </form>
 
         </div>
         <div class="bottomDiv">
-
+            <br><br><br><br>
+            <p class="bottomDivPara">Already have an account? <a class= "bottomDivAnchor" href="#">Log in</a></p>
         </div>
     </div>
 
